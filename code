@@ -1,0 +1,2 @@
+select ProductName from Products
+where CategoryID= (select MIN (CategoryID) from Products);
